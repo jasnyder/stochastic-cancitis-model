@@ -1,3 +1,34 @@
+# Installation
+
+To set up the code environment for this project, do the following:
+
+## Set up Conda Environment
+1. Install [Conda](https://www.anaconda.com/docs/getting-started/miniconda/install)
+2. Create conda environment. In a terminal in the parent folder `stochastic-cancitis-model`, run:
+```sh
+conda env create -p venv -f environment.yml
+```
+This will create a folder called `venv` that contains the required packages. You can alternatively replace `-p venv` with `-n myenv` to have the environment files stored in the default location (i.e. not in this folder)
+
+3. Activate conda environment:
+```sh
+conda activate ./venv
+```
+If you chose to create the environment with a name (e.g. `myenv`) you would instead run `conda activate myenv`.
+
+## Set up Julia Environment
+1. Install [Julia](https://julialang.org/install/)
+2. Run Julia in the command line (in the `stochastic-cancitis-model` folder)
+3. In Julia, type `]` to enter `pkg` mode, and then run
+```julia
+activate .
+instantiate
+```
+This will install all required packages and their dependencies. This may take a considerable amount of time.
+
+## Done!
+You should now be able to run all the code
+
 # Abstract
 
 The point of this folder is to demonstrate how to develop a stochastic version of a deterministic model.
