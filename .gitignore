@@ -2,3 +2,4 @@
 venv
 Manifest.toml
 *.egg-info
+dist
